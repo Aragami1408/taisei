@@ -135,7 +135,6 @@ TASK(spawn_midboss, NO_ARGS) {
 	boss_add_attack(b, AT_Move, "", 0, 0, midboss_dummy, NULL);
 
 	boss_start_attack(b, b->attacks);
-
 }
 
 TASK(boss_appear, { BoxedBoss boss; }) {
