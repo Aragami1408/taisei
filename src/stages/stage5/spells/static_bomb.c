@@ -113,7 +113,7 @@ TASK(slave, { cmplx pos; int number; }) {
 	coevent_signal_once(&slave->events.despawned);
 }
 
-DEFINE_EXTERN_TASK(stage5_midboss_iku_explosion) {
+DEFINE_EXTERN_TASK(stage5_midboss_static_bomb) {
 	STAGE_BOOKMARK(midspell1);
 	Boss *b = INIT_BOSS_ATTACK();
 	b->move = move_towards(VIEWPORT_W / 2 - VIEWPORT_H * I, 0.01);
